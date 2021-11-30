@@ -1,0 +1,1 @@
+golangにてindex.htmlを表示するアプリをECSへデプロイする
