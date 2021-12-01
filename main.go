@@ -10,6 +10,7 @@ type User struct {
 }
 
 func main() {
+	// ポートの指定は不要
 	r := gin.Default()
 	r.LoadHTMLGlob("templates/*.html")
 
