@@ -3,17 +3,17 @@
   "containerDefinitions": [
       {
           "name": "dockerfile-production-service",
-          "image": "",
+          "image": "926330672208.dkr.ecr.ap-northeast-1.amazonaws.com/dockerfile-production-go:latest",
           "cpu": 128,
           "memoryReservation": 128,
           "portMappings": [
               {
-                  "containerPort": 8080,
+                  "containerPort": 3000,
                   "protocol": "tcp"
               }
           ],
           "command": [
-              "/go/src/app/binary"
+              "./main"
           ],
           "essential": true
       }
